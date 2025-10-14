@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>LoveConnect — Settings</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="nav-left">
+      <a class="brand" href="index.html">❤ LoveConnect</a>
+      <nav class="nav-links">
+        <a href="index.html">Discover</a>
+        <a href="messages.html">Messages</a>
+        <a href="profile.html">Profile</a>
+        <a href="notifications.html">Notifications</a>
+        <a href="settings.html" class="active">Settings</a>
+      </nav>
+    </div>
+
+    <div class="nav-right">
+      <a href="signup.html" class="btn ghost">Sign Up / Log In</a>
+      <button id="darkToggle" class="icon-btn" aria-label="Toggle theme">🌙</button>
+    </div>
+  </header>
+
+  <main class="container settings-page">
+    <section class="card">
+      <h2>Account Settings</h2>
+
+      <label>Receive email notifications
+        <input id="emailNotif" type="checkbox" />
+      </label>
+
+      <label>Show age on profile
+        <input id="showAge" type="checkbox" checked />
+      </label>
+
+      <div class="form-actions">
+        <button id="saveSettings" class="btn primary">Save</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">© <span id="year"></span> LoveConnect</footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

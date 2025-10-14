@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>LoveConnect — Profile</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="nav-left">
+      <a class="brand" href="index.html">❤ LoveConnect</a>
+      <nav class="nav-links">
+        <a href="index.html">Discover</a>
+        <a href="messages.html">Messages</a>
+        <a href="profile.html" class="active">Profile</a>
+        <a href="notifications.html">Notifications</a>
+        <a href="settings.html">Settings</a>
+      </nav>
+    </div>
+
+    <div class="nav-right">
+      <a href="signup.html" class="btn ghost">Sign Up / Log In</a>
+      <button id="darkToggle" class="icon-btn" aria-label="Toggle theme">🌙</button>
+    </div>
+  </header>
+
+  <main class="container profile-page">
+    <section class="profile-card-large card">
+      <div class="profile-top">
+        <img id="meAvatar" src="https://i.pravatar.cc/160?img=20" alt="Me" />
+        <div>
+          <h2 id="meName">You</h2>
+          <p id="meBio">Your bio goes here</p>
+        </div>
+      </div>
+
+      <form id="profileForm" class="profile-form">
+        <label>Name<input id="inputName" type="text" /></label>
+        <label>Bio<textarea id="inputBio" rows="3"></textarea></label>
+        <label>Location<input id="inputLocation" /></label>
+        <div class="form-actions">
+          <button type="submit" class="btn primary">Save</button>
+          <button id="resetProfile" type="button" class="btn ghost">Reset</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">© <span id="year"></span> LoveConnect</footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

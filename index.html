@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>LoveConnect — Discover</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="nav-left">
+      <a class="brand" href="index.html">❤ LoveConnect</a>
+      <nav class="nav-links">
+        <a href="index.html" class="active">Discover</a>
+        <a href="messages.html">Messages</a>
+        <a href="profile.html">Profile</a>
+        <a href="notifications.html">Notifications</a>
+        <a href="settings.html">Settings</a>
+      </nav>
+    </div>
+
+    <div class="nav-right">
+      <a href="signup.html" class="btn ghost">Sign Up / Log In</a>
+      <button id="darkToggle" class="icon-btn" aria-label="Toggle theme">🌙</button>
+    </div>
+  </header>
+
+  <main class="container discover-page">
+    <section class="hero">
+      <h1>Discover people nearby</h1>
+      <p>Swipe through modern profiles, like, and start real conversations.</p>
+    </section>
+
+    <section class="cards-grid" id="discoverGrid">
+      <!-- JS will populate profile cards -->
+    </section>
+  </main>
+
+  <footer class="footer">© <span id="year"></span> LoveConnect</footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

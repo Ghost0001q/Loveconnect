@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Login & Sign-up Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="css/signup.css">
+</head>
+<body>
+    <div class="container">
+        <div class="image-section">
+            <img src="images/img.webp" alt="hero image">
+        </div>
+
+        <div class="form-section">
+            <div class="login-form">
+                <h2>Experience the Future<br> with AI-Powered Innovation</h2>
+                <button class="btn google">
+                    <i class="ri-google-fill left-icon"></i>
+                    Continue with Google
+                    <i class="ri-meta-fill right-icon"></i>
+                </button>
+
+                <button class="btn email">
+                    <i class="ri-mail-line left-icon"></i>
+                    Continue with Email
+                    <i class="ri-arrow-right-line right-icon"></i>
+                </button>
+
+                <p class="terms">By signing in, you agree to Generative AI’s 
+                    <a href="#">Terms of myService</a>, 
+                    <a href="#">Privacy Policy</a>, and 
+                    <a href="#">Data Usage Provisions</a>.
+                </p>
+            </div>
+
+            <!--========Sign UP Form=======-->
+            <div class="signup-form">
+                <h2>Create Your Account</h2>
+                <div class="form-header">
+                    <i class="ri-arrow-left-line back-btn"></i>
+                    <p class="switch-form">Already have an account? <a id="LogInLink" href="#">Log In</a></p>
+                </div>
+
+                <div class="input-group">
+                    <input type="text" name="text" placeholder="Your Name">
+                    <i class="ri-user-fill"></i>
+                </div>
+
+                <div class="input-group">
+                    <input type="email" name="email" placeholder="Email">
+                    <i class="ri-mail-fill"></i>
+                </div>
+
+                <div class="input-group">
+                    <input type="password" name="password" placeholder="Enter your password">
+                    <i class="ri-lock-fill"></i>
+                </div>
+
+                <a href="#" class="neon-btn" id="signupBtn">Sign Up</a>
+                <p class="terms">By signing in, you agree to Generative AI’s 
+                    <a href="#">Terms of Service</a>, 
+                    <a href="#">Privacy Policy</a>, and 
+                    <a href="#">Data Usage Provisions</a>.
+                </p>
+            </div>
+
+            <!--========Sign IN Form=======-->
+            <div class="signin-form">
+                <h2>Welcome Back</h2>
+                <div class="form-header">
+                    <i class="ri-arrow-left-line back-btn"></i>
+                    <p class="switch-form">Don't have an account yet? <a id="SignUpLink" href="#">Sign Up</a></p>
+                </div> 
+
+                <div class="input-group">
+                    <input type="email" name="email" placeholder="Email">
+                    <i class="ri-mail-fill"></i>
+                </div>
+
+                <div class="input-group">
+                    <input type="password" name="password" placeholder="Enter your password">
+                    <i class="ri-lock-fill"></i>
+                </div>
+
+                <a href="#" class="neon-btn" id="loginBtn">Log In</a>
+                <p class="terms">By signing in, you agree to Generative AI’s 
+                    <a href="#">Terms of Service</a>, 
+                    <a href="#">Privacy Policy</a>, and 
+                    <a href="#">Data Usage Provisions</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- loading overlay -->
+    <div id="loadingOverlay" style="display:none;position:fixed;inset:0;align-items:center;justify-content:center;background:rgba(0,0,0,0.6);z-index:1000;">
+      <div style="background:rgba(255,255,255,0.04);padding:28px;border-radius:12px;text-align:center;color:white;">
+        <div class="spinner" style="width:48px;height:48px;border-radius:50%;border:5px solid rgba(255,255,255,0.15);border-top-color:rgba(255,255,255,0.9);margin:0 auto 12px;animation:spin 1s linear infinite"></div>
+        <div style="font-size:18px;font-weight:600;">Signing in…</div>
+      </div>
+    </div>
+
+<script type="text/javascript" src="js/signup.js"></script> 
+</body>
+</html>

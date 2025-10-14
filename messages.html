@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>LoveConnect — Messages</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="nav-left">
+      <a class="brand" href="index.html">❤ LoveConnect</a>
+      <nav class="nav-links">
+        <a href="index.html">Discover</a>
+        <a href="messages.html" class="active">Messages</a>
+        <a href="profile.html">Profile</a>
+        <a href="notifications.html">Notifications</a>
+        <a href="settings.html">Settings</a>
+      </nav>
+    </div>
+
+    <div class="nav-right">
+      <a href="signup.html" class="btn ghost">Sign Up / Log In</a>
+      <button id="darkToggle" class="icon-btn" aria-label="Toggle theme">🌙</button>
+    </div>
+  </header>
+
+  <main class="container messenger-page">
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <input id="convoSearch" placeholder="Search conversations or people..." />
+      </div>
+      <ul id="convoList" class="convo-list"></ul>
+    </aside>
+
+    <section class="chat-area">
+      <div class="tabs-bar" id="tabsBar"></div>
+      <div class="chat-window" id="chatWindow"><div class="chat-empty"><p>No chat open — click a person on the left to open a conversation</p></div></div>
+    </section>
+  </main>
+
+  <footer class="footer">© <span id="year"></span> LoveConnect</footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
