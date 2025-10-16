@@ -1,49 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" class="antialiased">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>LoveConnect — Settings</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <script>window.tailwind = { config: { darkMode: 'class' } }</script>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <header class="navbar">
-    <div class="nav-left">
-      <a class="brand" href="index.html">❤ LoveConnect</a>
-      <nav class="nav-links">
-        <a href="index.html">Discover</a>
-        <a href="messages.html">Messages</a>
-        <a href="profile.html">Profile</a>
-        <a href="notifications.html">Notifications</a>
-        <a href="settings.html" class="active">Settings</a>
-      </nav>
-    </div>
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-100">
 
-    <div class="nav-right">
-      <a href="signup.html" class="btn ghost">Sign Up / Log In</a>
-      <button id="darkToggle" class="icon-btn" aria-label="Toggle theme">🌙</button>
-    </div>
-  </header>
+  <!-- Navbar identical to index.html -->
 
-  <main class="container settings-page">
-    <section class="card">
-      <h2>Account Settings</h2>
-
-      <label>Receive email notifications
-        <input id="emailNotif" type="checkbox" />
+  <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <section class="bg-white dark:bg-gray-800/60 rounded-2xl p-6 shadow-sm space-y-4">
+      <h2 class="text-xl font-semibold">Account Settings</h2>
+      <label class="flex items-center justify-between">
+        <span>Receive email notifications</span>
+        <input type="checkbox" class="w-5 h-5 accent-pink-500">
       </label>
-
-      <label>Show age on profile
-        <input id="showAge" type="checkbox" checked />
+      <label class="flex items-center justify-between">
+        <span>Show age on profile</span>
+        <input type="checkbox" checked class="w-5 h-5 accent-pink-500">
       </label>
-
-      <div class="form-actions">
-        <button id="saveSettings" class="btn primary">Save</button>
-      </div>
+      <button class="px-4 py-2 bg-pink-500 text-white rounded-md">Save</button>
     </section>
   </main>
 
-  <footer class="footer">© <span id="year"></span> LoveConnect</footer>
-  <script src="js/script.js"></script>
+  <footer class="text-center py-6 text-sm text-gray-500 dark:text-gray-400">© <span id="year"></span> LoveConnect</footer>
+  <script src="js/app.js"></script>
 </body>
 </html>
