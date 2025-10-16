@@ -1,38 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" class="antialiased">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>LoveConnect — Notifications</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <script>window.tailwind = { config: { darkMode: 'class' } }</script>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <header class="navbar">
-    <div class="nav-left">
-      <a class="brand" href="index.html">❤ LoveConnect</a>
-      <nav class="nav-links">
-        <a href="index.html">Discover</a>
-        <a href="messages.html">Messages</a>
-        <a href="profile.html">Profile</a>
-        <a href="notifications.html" class="active">Notifications</a>
-        <a href="settings.html">Settings</a>
-      </nav>
-    </div>
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-100">
 
-    <div class="nav-right">
-      <a href="signup.html" class="btn ghost">Sign Up / Log In</a>
-      <button id="darkToggle" class="icon-btn" aria-label="Toggle theme">🌙</button>
-    </div>
-  </header>
+  <!-- Navbar identical to index.html -->
 
-  <main class="container notifications-page">
-    <section class="card">
-      <h2>Notifications</h2>
-      <ul id="notificationsList" class="notifications-list"></ul>
+  <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <section class="bg-white dark:bg-gray-800/60 rounded-2xl p-6 shadow-sm">
+      <h2 class="text-xl font-semibold mb-4">Notifications</h2>
+      <ul class="divide-y divide-gray-100 dark:divide-gray-700">
+        <li class="py-3 flex items-start gap-3">
+          <img src="https://i.pravatar.cc/40?img=5" class="w-10 h-10 rounded-full" alt="">
+          <p><strong>Jane</strong> liked your profile.</p>
+        </li>
+        <li class="py-3 flex items-start gap-3">
+          <img src="https://i.pravatar.cc/40?img=14" class="w-10 h-10 rounded-full" alt="">
+          <p><strong>Alex</strong> sent you a message.</p>
+        </li>
+      </ul>
     </section>
   </main>
 
-  <footer class="footer">© <span id="year"></span> LoveConnect</footer>
-  <script src="js/script.js"></script>
+  <footer class="text-center py-6 text-sm text-gray-500 dark:text-gray-400">© <span id="year"></span> LoveConnect</footer>
+  <script src="js/app.js"></script>
 </body>
 </html>
+<html><body>notifications page placeholder</body></html>
